@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/index.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="scoreboard">
+      <div class="player">
+        <div id="player-name-1" class="name">Player 1</div>
+        <div id="score-1" class="score">0</div>
+      </div>
+      <div>
+        <h1 class="logo">Tic Tac Toe</h1>
+      </div>
+      <div class="player">
+        <div id="player-name-2" class="name">Player 2</div>
+        <div id="score-2" class="score">0</div>
+      </div>
+    </div>
+    <div class="game">
+      <div id="table" class="table">
+        <div class="row" data-row="0">
+          <div class="col" data-row="0" data-col="0"></div>
+          <div class="col" data-row="0" data-col="1"></div>
+          <div class="col" data-row="0" data-col="2"></div>
+        </div>
+        <div class="row" data-row="1">
+          <div class="col" data-row="1" data-col="0"></div>
+          <div class="col" data-row="1" data-col="1"></div>
+          <div class="col" data-row="1" data-col="2"></div>
+        </div>
+        <div class="row" data-row="2">
+          <div class="col" data-row="2" data-col="0"></div>
+          <div class="col" data-row="2" data-col="1"></div>
+          <div class="col" data-row="2" data-col="2"></div>
+        </div>
+      </div>
+      <button id="new-game" class="hidden">Começar novo jogo</button>
+    </div>
+  </div>
+</body>
+
+</html>

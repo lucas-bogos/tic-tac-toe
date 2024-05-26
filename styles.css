@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem;
+  color: #C9C9C9;
+  background-color: #1D1D1F;
+}
+
+.scoreboard .player > .name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.scoreboard .player > .score {
+  font-size: 1.2rem;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 9.0rem 7.2rem;
+}
+
+.game > button {
+  margin-top: 4rem;
+  padding: 1.6rem 4.8rem;
+  background-color: #1D1D1F;
+  color: #F1F1F1;
+  font-weight: 600;
+  border: none;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  height: 40rem;
+  font-size: 4.0rem;
+}
+
+.table .row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  height: 13.3rem;
+  text-align: center;
+}
+
+.table .row .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 12.3rem;
+  max-width: 13.3rem;
+  height: 13.3rem;
+  cursor: pointer;
+}
+
+.table .row .col:nth-child(2) {
+  border-style: solid;
+  border-bottom: 0.2rem;
+  border-top: 0.2rem;
+  border-color: #2C2536;
+}
+
+.table .row:nth-child(2) {
+  border-style: solid;
+  border-left: 0.2rem;
+  border-right: 0.2rem;
+  border-color: #2C2536;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #FFF;
+}
